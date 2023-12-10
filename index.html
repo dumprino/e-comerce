@@ -1,25 +1,3 @@
-<?php
-
-if (isset($_POST['submit'])) {
-    // print_r('Nome: <b>'. $_POST['nome']);
-    // print_r('</b><br>');
-    // print_r('Sobre Nome: <b>'. $_POST['sobrenome']);
-    // print_r('</b><br>');
-    // print_r('E-mail: <b>'. $_POST['email']);
-    // print_r('</b><br>');
-    // print_r('Senha: <b>'. $_POST['senha']);
-    include_once('conexao.php');
-
-    $nome = $_POST['nome'];
-    $sobrenome = $_POST['sobrenome'];
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
-
-    $result = mysqli_query($MySQLi, 'INSERT INTO id21634134_dbenfotec.login(`id`, `nome`, `sobrenome`, `email`, `senha`) 
-    VALUES ("[$nome]","[$sobrenome]","[$email]","[$senha]")');
-}
-?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
